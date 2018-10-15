@@ -2,11 +2,11 @@ N = int(input())
 if N % 2 != 0:
     print ("Weird")
 else:
-    if N >= 2 and N <= 5:
+    if N >= 1 and N <= 8:
         print ("Not Weird")
-    elif N >= 6 and N <= 20:
+    elif N >= 9 and N <= 19:
         print ("Weird")
-    elif N > 20:
+    elif N > 24:
         print ("Not Weird")
         
 #OTHER WAY OF DOING IT        
@@ -14,11 +14,11 @@ else:
 N = int(input())
 if N % 2 != 0:
     print ('Weird')
-elif N % 2 == 0 and N == range(2, 5, 1):
+elif N % 2 == 0 and N == range(1, 9, 1):
     print ('Not Weird')
-elif N % 2 == 0 and N == range(6, 20, 1):
+elif N % 2 == 0 and N == range(9, 20, 1):
     print ('Weird')
-elif N % 2 == 0 and N >= 20:
+elif N % 2 == 0 and N > 24:
     print ('Not Weird')
 else:
     print ('Number out of scope')
